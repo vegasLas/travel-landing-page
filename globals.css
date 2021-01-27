@@ -163,7 +163,7 @@ html, body {
 
 @media(max-width: 786px) {
     .header__content {
-        transition: all 0.5 linear 0;
+        transition: all 0.5s linear 0s;
         padding: 0 25px;
         display: flex;
         align-items: center;
@@ -253,9 +253,6 @@ html, body {
         z-index: 2;
         overflow: scroll;
     }
-    .header__burger.active span {
-        background-color: #111;
-    }
     .header__burger span:nth-child(1) {
         top: 0;
     }
@@ -302,6 +299,19 @@ html, body {
     height: 20px;
     border-radius: 50%;
     border: 2px solid #FFFFFF;
+}
+
+@media (max-height: 600px) {
+    .header {
+        position: relative;
+        background: url(./imgs/main.screen/overlay1.png) center / cover no-repeat, url(./imgs/main.screen/Image1.jpg) center / cover no-repeat;
+    }
+    .header__wrapper {
+        padding: 0px 0px 100px 0px;
+    }
+    .main-screen {
+        display: none;
+    }
 }
 
 @media (max-width:786px) {
@@ -370,7 +380,7 @@ html, body {
         height: 100%;
         top: -100%;
         left: 0;
-        background: #a1b7f1;
+        background: #0d314f;
         z-index: 4;
         flex-direction: column;
         line-height: 40px;
@@ -419,7 +429,7 @@ html, body {
 
 @media(max-width: 600px) {
     .navbar__link {
-        color: black;
+        color: #fff;
         margin-right: 0px;
     }
 }
@@ -860,6 +870,7 @@ html, body {
         display: none;
     }
 }
+
 @media (max-width: 420px) {
     .inspired__header-h2 {
         margin: 0 10px;
